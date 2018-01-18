@@ -28,6 +28,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'circleci'
 gem 'rectify'
+gem 'fog-aws'
 
 group :production do
   gem 'passenger'

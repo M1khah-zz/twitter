@@ -22,5 +22,12 @@ module Workspace
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    # config.to_prepare do
+    #   Devise::SessionsController.layout "registrations/profile.html.haml"
+    #   Devise::RegistrationsController.layout "registrations/profile.html.haml"
+    #   # Devise::ConfirmationsController.layout "your_layout_name"
+    #   # Devise::UnlocksController.layout "your_layout_name"
+    #   # Devise::PasswordsController.layout "your_layout_name"
+    # end
   end
 end
