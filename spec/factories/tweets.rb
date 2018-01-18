@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :tweet do
     body { Faker::Lorem.sentence }
-    user nil
+    user { FactoryBot.build(:user) }
   end
 end
