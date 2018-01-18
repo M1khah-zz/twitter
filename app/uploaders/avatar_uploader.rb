@@ -1,9 +1,9 @@
 class AvatarUploader < CarrierWave::Uploader::Base
 
-  # include CarrierWave::MiniMagick
-
-  # Choose what kind of storage to use for this uploader:
-  storage :file
+  include CarrierWave::MiniMagick
+ # Choose what kind of storage to use for this uploader:
+  storage :fog
+  process resize_to_fill: [300, 300]
 
 
   def store_dir
